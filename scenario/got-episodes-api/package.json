@@ -1,0 +1,37 @@
+{
+    "name": "got-episodes-api",
+    "version": "0.6.0",
+    "description": "The Got Episodes API",
+    "main": "./src/server.js",
+    "useragent": "got-episodes-api",
+    "scripts": {
+        "start": "node ./src/server.js | pino-pretty -c -S",
+        "dev": "nodemon ./src/server.js -e js,json --ignore data/ --verbose | pino-pretty -c -S",
+        "snyk": "snyk test --dev",
+        "test": "tap --reporter=specy --no-coverage",
+        "wtest": "tap --reporter=specy --watch --no-check-coverage",
+        "lint": "eslint . --ext .js"
+    },
+    "author": "Lars Kåre Skjørestad",
+    "license": "MIT",
+    "dependencies": {
+        "@fastify/cors": "^7.0.0",
+        "@fastify/rate-limit": "^6.0.1",
+        "@fastify/swagger": "^6.1.0",
+        "fastify": "^3.27.1",
+        "got": "^11.8.5",
+        "jsonwebtoken": "^8.5.1",
+        "jwks-rsa": "^2.1.3",
+        "pino": "^8.0.0",
+        "pino-pretty": "^8.0.0",
+        "underscore": "^1.13.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.16.0",
+        "global-agent": "^3.0.0",
+        "nodemon": "^2.0.16",
+        "sinon": "^14.0.0",
+        "snyk": "^1.946.0",
+        "tap": "^16.2.0"
+    }
+}

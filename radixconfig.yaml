@@ -1,0 +1,29 @@
+apiVersion: radix.equinor.com/v1
+kind: RadixApplication
+metadata:
+  name: pawa-slides
+spec:
+  environments:
+    - name: prod
+      build:
+        from: main
+  components:
+    - name: nginx
+      src: ./slides
+      ports:
+        - name: http
+          port: 8080
+      publicPort: http
+      environmentConfig:
+        - environment: prod
+          monitoring: false
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+  dnsAppAlias:
+    environment: prod
+    component: nginx
