@@ -44,7 +44,6 @@ In our testing for the scenario we are introducing quite a risky pratcies that s
 - Storing client secrets for components in config files
 - Storing creds for test users in config files
 - Extensive logging for debug purposes reveal a lot of sensitive information.
-- Turning off selected security features when testing (like the secure for our session cookie)
 
 ## Technical assumptions
 

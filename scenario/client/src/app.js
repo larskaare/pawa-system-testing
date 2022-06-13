@@ -69,19 +69,24 @@ function build(opts = {}) {
     app.register(require('@fastify/auth'));
     app.register(fastifyCookie);
 
+    // Using the secure: 'auto' from fastify session.
+    // This will guide the samesite part of the cookie
+    // The functionality does not support setting secure to true for localhost.
+    // which should be ok according to MDN - https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+
     var sessionCookieConfig = {
-        secure: true,
-        sameSite: 'Lax',
+        secure: 'auto',
+        // sameSite: 'Lax',
         maxAge: 86400000,
         httpOnly: true,
     };
 
-    if (
-        __.isEqual(process.env.NODE_ENV, 'development') ||
-        __.isEqual(process.env.NODE_ENV, 'test')
-    ) {
-        sessionCookieConfig.secure = false;
-    }
+    // if (
+    //     __.isEqual(process.env.NODE_ENV, 'development') ||
+    //     __.isEqual(process.env.NODE_ENV, 'test')
+    // ) {
+    //     sessionCookieConfig.secure = false;
+    // }
 
     logger.warn(
         'Setting session cookie SECURE config to ' + sessionCookieConfig.secure
