@@ -47,7 +47,7 @@ My context and
 > If you had $100 to spend on testing, how would you split the funds on the various types of testing?
 
 - Should we shift more effort into system testing?
-- How can we avoid turning off A&A (or any security feature) when doing system testing?
-- What impact does this have on patterns and architecture - testability?
-- Could we involve the customer in writing, running and maintaining system tests (acceptance tests)?
+- How can we avoid turning off A&A (or any security feature) when doing system testing? What needs to happen?
+- What impact does this have on patterns and architectures?
+- Could we involve the customer in writing, running and maintaining system tests (acceptance tests)? What would need to happen to make this work?
   

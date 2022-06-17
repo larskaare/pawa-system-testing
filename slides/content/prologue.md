@@ -20,9 +20,9 @@ Protecting Api's and Web applications (PAWA) -
 
 ## Disclaimer
 
-> The more I learn about the topic at hand, the more I realize how complex it is. I am not an expert. Answers are rarely clear-cut. There are always more than one solution available. </br>Context matters - a lot!  <!-- .element: style="font-size:0.8em"-->
+> The more I learn about the topic at hand, the more I realize how complex it is. I am not an expert. Answers are rarely clear-cuts. There are always more than one solution available. </br>Context matters - a lot!  <!-- .element: style="font-size:0.8em"-->
 
-Code examples is not production quality!! </br>Some patters that are discussed is quite risks - be cautious - </br>use threat modelling on you dev/test systems<!-- .element: style="font-size:0.5em"-->
+Code examples is not production quality!! </br>Some patters that are discussed is quite risky - be cautious - </br>use threat modelling on you dev/test systems<!-- .element: style="font-size:0.5em"-->
 
 ---
 

@@ -72,11 +72,11 @@ A few selected could be:
 
 1. Testing is context dependent - rarely a right or wrong answer
 2. We automate more or less all of our testing
-3. We strive for a good balance between unit and other testing
+3. We strive for a good balance between unit testing and other types of testing
 4. Non-functional tests are as important as the functional ones
 5. Negative testing will make our systems more robust
-6… Testability of our systems/code is crucial
-7. Asking "How to test this" should be the most important question to ask.
+6. Testability of our systems/code is crucial
+7. Asking "How to test this" should be the most important question to ask for any feature.
 8. Don't test in production?
 9. The artifacts that are tested are the exact ones we intend to promote to production.
 10. **Running code should not known that it's under test**

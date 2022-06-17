@@ -10,6 +10,8 @@
 
 > Demo of running application.
 
+Testing in "private" mode, discussing some of the testing challenges<!-- .element: style="font-size:0.5em"-->
+
 ---
 
 ## Putting the system in test mode
@@ -56,7 +58,7 @@ docker-compose up --abort-on-container-exit --exit-code-from cypress
   - a fully automated scenario
   - good support for continuos testing
   - a fully synthetic test environment
-  - not turned off A&A
+  - not turned off A&A, or any other security features
   - the opportunity to create any scenario of users, groups etc and test from end-user perspective.
   - an opportunity to invite end-users to contribute to write tests?</br> (tests which become part of our regression suite)
 - We have broken a few principles to reach this state - </br>An ok balance of risks?
@@ -66,5 +68,5 @@ docker-compose up --abort-on-container-exit --exit-code-from cypress
   - For a "real-life" set-up everything should be scripted - like creating AD object
   - Secrets stores (like KeyVault) should be used to hold config
   - Routines needs to be developed to rotate secrets
-  - Enabling https for the test environment would enable more prod like security features
+  
 </div>
