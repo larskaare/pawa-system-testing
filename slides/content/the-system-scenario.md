@@ -39,7 +39,7 @@ Detailed and steps are [documented](https://github.com/larskaare/pawa-system-tes
 
 </div>
 </br>
-<div style="background-color:grey; font-size:0.6em">The choices we make should negatively impact as few as possible of the </br>security features of our system! The secure default should be the goal!</div>
+<div style="background-color:grey; font-size:0.6em">The choices we make should, as far as possible, not have a negative impact on </br>security features of our system! Using the secure default should be the goal!</div>
 
 <font size="3em">A more elaborate [discussion](https://github.com/larskaare/pawa-system-testing/blob/main/scenario/doc/the-test-challenges.md) is available.</font>
 

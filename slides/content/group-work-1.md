@@ -1,6 +1,6 @@
 # Gathering insight
 
-30m + 30m
+30m (discuss) + 30m (share)
 
 Workshop purpose: 
 > Generate insight and ideas on how to run systems tests of web applications and api's without disabling authentication and authorisation.

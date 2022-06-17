@@ -1,6 +1,6 @@
 # Gathering insight
 
-15m
+15m (discuss, share)
 
 Mini workshop purpose: 
 > Generate insight and ideas on how to run systems tests of web applications and api's without disabling authentication and authorisation.
