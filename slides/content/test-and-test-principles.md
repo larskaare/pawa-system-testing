@@ -79,7 +79,7 @@ A few selected could be:
 7. Asking "How to test this" should be the most important question to ask for any feature.
 8. Don't test in production?
 9. The artifacts that are tested are the exact ones we intend to promote to production.
-10. **Running code should not known that it's under test**
+10. **Running code should not know that it's under test**
 11. **Testing should not involve components that we don't control/own**
 
 Teams would benefit from agreeing on test principles for their context!

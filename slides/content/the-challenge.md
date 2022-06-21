@@ -44,7 +44,7 @@ My context and
 
 ## Challenge
 
-> If you had $100 to spend on testing, how would you split the funds on the various types of testing?
+> If you had $1M to spend on testing, how would you split the funds on the various types of testing?
 
 - Should we shift more effort into system testing?
 - How can we avoid turning off A&A (or any security feature) when doing system testing? What needs to happen?
