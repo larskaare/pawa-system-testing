@@ -1,16 +1,12 @@
 # PAWA System Testing
 
-This is the home of the PAWA System Testing Workshop. 
-
 ## Purpose
 
-> Generate insight and ideas on how to run systems tests of web applications and api's without disabling authentication and authorisation.
+> Encourage teams to divert more effort on to system testing with authn/z (and other security features) activated.
 
 ## Context
 
-Quite often when we do integration/system/acceptance testing for web apps and api's, we turn off, or mock, the authentication and authorization parts. This challenge stop many teams from giving this part of testing the focus it should have. Turning of security features for testing increases risks. Using customers to define system tests could also be a missed opportunity.
-
-The workshop has two parts. In part 1 we will present some common challenges and opportunities, and then demo a pattern of a working solution in a typical corporate context. The second part is about gathering insight from the audience on contexts, challenges, opportunities, solutions with their pros and cons. At the end of the workshop we hope to have stirred your curiosity and generated a few ideas that you could start exploring.
+Experience have shown that we spend most of our test effort on unit testing. Many team reports that a key blocker for spending more time on system testing is the effort required to manage/mock the authentication and authorization parts of the system. In this talk we will briefly explore this problem and present one potential solution that could work for some teams.
 
 ## The Scenario
 

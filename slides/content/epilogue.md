@@ -3,8 +3,6 @@
 
 # Thanx You!
 
-#### Remember to share your insight and learnings!
-
 I am larskaare @ [linkedIn](https://www.linkedin.com/in/larskaare/), [twitter](https://twitter.com/larskaare) and [github](https://github.com/larskaare/)
 
 <hr>
