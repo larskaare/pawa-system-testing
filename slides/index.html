@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; connect-src 'self';
+        script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/ 'unsafe-eval';
+        style-src 'self' eds-static.equinor.com https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/ 'unsafe-inline';
+        img-src 'self' eds-static.equinor.com data: 'self';
+        font-src 'self' eds-static.equinor.com;
+        frame-src 'self';
+        "
+    />
+
+    <title>PAWA System Testing</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="icon" href="./content/images/appsec-icon.svg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.css"
+      integrity="sha512-Q4Cz3JE//UwVLFChrv/lzPe+rK0TVgs3uXcKEWpxZS9gXQ2VicPwx/CNfXG2CyFxwzlYKWKKiNk5aw21abBIzQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css"
+      integrity="sha512-ITH3NSfntO7uI5n+BnxGNXpzDUoOsmAXuG37UDONLxNYIdc0EBBOOQ1xyc+t9ag9ETSuBXFApx+Rod0uURfDYw=="
+      crossorigin="anonymous"
+    />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/monokai.css"
+      integrity="sha512-ITi+aXPAZ6cIHUIulO7jdT3gOiN9w4xIkyqJjFleAkjp2PLj0+oKmjIRlEjudk1bBvjNu4EkyFMstRzwZ+E0GA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./content/css/equinor.css"
+      id="theme"
+      integrity="sha512-I5gFjvXYCwV2KgvQR+flc2ADcvu79GBcr2zoFbgJz2dl5iWsigz6F6O/o4bJLIcy56/NZ+LBpiX4sfdIj4+dig=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- ******************** CONTENT START ******************** -->
+
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="content/intro.md"
+          data-separator="^-----"
+          data-separator-vertical="^---"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>
+        <section
+          data-markdown="content/observations.md"
+          data-separator="^-----"
+          data-separator-vertical="^---"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>
+        <section
+          data-markdown="content/the-system-scenario.md"
+          data-separator="^-----"
+          data-separator-vertical="^---"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>  
+        <section
+          data-markdown="content/test-and-test-principles.md"
+          data-separator="^-----"
+          data-separator-vertical="^---"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>
+        <section
+          data-markdown="content/a-solution.md"
+          data-separator="^-----"
+          data-separator-vertical="^---"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>
+        <section
+          data-markdown="content/wrappingup.md"
+          data-separator="^-----"
+          data-separator-vertical="^---"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>
+        <section
+          data-markdown="content/epilogue.md"
+          data-separator="^-----"
+          data-separator-vertical="^---"
+          data-separator-notes="^Note:"
+          data-charset="utf-8"
+        ></section>
+
+      </div>
+    </div>
+
+    <!-- ******************** CONTENT END ******************** -->
+    <script
+      src="content/js/app.js"
+      type="module"
+      integrity="sha512-67CDHA21PPMVAul2wCD/UqL+FqQOFmS/U0w4nEB8wCpepZ7BaYJ0PwDhXKPrXort3y1SGab0qIjqwDuXxjlCzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"
+      integrity="sha512-131e3mIrDAyUD075SVzvIjS0g97uDg0+/qAobDHd++h+lgFi4z88DVOpidm06jpb+0PzK4kcm9w79r6EHV0SkA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"
+      type="module"
+      integrity="sha512-QAU7Ux8iEB53koLKFCtddfFp0D1+uQWoX3ROnRDLeiE98XHOkMciaup0Spc014jQAuJaqz8VjUZdBqriheI4Lg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.esm.min.js"
+      type="module"
+      integrity="sha512-HXVVrV2ItwT6aIpmklWAJFkGG8zZWgI1qZSjY7NJMIIQSPVYCZuYy3nnUi944XunjSGErexxs5B/aVzR6B2wKw=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"
+      type="module"
+      integrity="sha512-nLsCkPS/rdxRVOkxiKnld9KhQ24V/5kRChzSZ3MoFODykbWyBlQRsHLrbpN3J4LabYBnXIp1EnRIo3ifvyiQIg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"
+      type="module"
+      integrity="sha512-U3fPDUX5bMrn1wnYqjaK44MFA9E6MKS+zPAg9WPAGF5XhReBeDj3FGaA831CjueG+YJxYA3WaO/m33kMIoOs/A=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
