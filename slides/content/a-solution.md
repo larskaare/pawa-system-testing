@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 -->
 # Exploring one potential solution
 
 ---

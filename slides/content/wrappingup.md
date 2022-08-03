@@ -1,13 +1,7 @@
 <!-- .slide: data-background-image="./content/images/appsec-icon.svg" data-background-size="7%" data-background-position="right 2% top 2%"-->
-<!-- markdownlint-disable MD041 -->
+<!-- markdownlint-disable MD041 MD033 -->
 
 # Wrapping up
-
----
-
-## Our Objective 
-
-> Encourage teams to divert more effort on to system testing with authn/z (and other security features) activated.
 
 ---
 
@@ -15,16 +9,24 @@
 
 <div style="font-size:0.9em">
 
-For our "complex and modern system" we now have
+For our "complex and modern system" we now have:
 
-- A fully automation system test scenario running
-- A fully synthetic test environment
-- A system with active Authn/z
-- A system with active security controls
+- A fully automation system test scenario running <!-- .element: class="fragment" data-fragment-index="1" -->
+- A fully synthetic test environment <!-- .element: class="fragment" data-fragment-index="2" -->
+- A system with active Authn/z <!-- .element: class="fragment" data-fragment-index="3" -->
+- A system with active security controls <!-- .element: class="fragment" data-fragment-index="4" -->
 
-We have broken a few principles to reach this state - </br>the trade-offs could be acceptable?
+We have broken a few principles to reach this state - </br>the trade-offs could be acceptable? <!-- .element: class="fragment" data-fragment-index="4" -->
   
 </div>
+
+---
+
+## Our Objective
+
+> Encourage teams to divert more effort on to system testing with authn/z (and other security features) activated.
+
+It is hard, not only a technical challenge </br>- but it is doable - and necessary?
 
 ---
 

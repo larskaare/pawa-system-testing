@@ -7,6 +7,7 @@
 ---
 
 ## The Application
+
 -- Game Of Thrones Episodes --
 
 ![The App](./content/images/the-app.png)
@@ -17,7 +18,9 @@
 
 <img src="./content/images/pawa-scenario.jpg" width="60%" height="auto">
 
-We are using a "back-end for front-end" pattern for the client component<!-- .element: style="font-size:0.6em"-->
+We are using OICD and oAuth2 for authn/z</br>
+We are using a "back-end for front-end" pattern for the client component</br>
+We will be using oAuth2 ROPC rather than Code Grant for the client login in test mode<!-- .element: style="font-size:0.6em"-->
 
 ---
 

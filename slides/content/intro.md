@@ -1,5 +1,5 @@
 <!-- .slide: data-background-image="./content/images/appsec-icon.svg" data-background-size="7%" data-background-position="right 2% top 2%"-->
-<!-- markdownlint-disable MD041 -->
+<!-- markdownlint-disable MD041 MD033-->
 
 # Running system tests with active authn/z
 
@@ -13,7 +13,7 @@
 
 > Encourage teams to divert more effort on to system testing with authn/z (and other security features) activated.
 
-Active = Components runing in "production mode", security features like authn/z not mocked or disabled<!-- .element: style="font-size:0.5em"-->
+Active = Components running in "production mode", security features like authn/z not mocked or disabled<!-- .element: style="font-size:0.5em"-->
 
 ---
 
@@ -21,7 +21,7 @@ Active = Components runing in "production mode", security features like authn/z 
 
 It will have an impact on mitigating well known security risks!
 
-<hr>
+</hr>
 
 <div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 50% 50%;">
 
@@ -51,6 +51,7 @@ It will have an impact on mitigating well known security risks!
 </div>
 
 ---
+
 ## Disclaimer
 
 > The more I learn about the topic at hand, the more I realize how complex it is. I am not an expert. Life is not simple. All solutions have trade-off's. There are always more than one solution. Context matters - a lot!  <!-- .element: style="font-size:0.8em"-->
@@ -89,7 +90,7 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 - Our demo application/system
 - Test principles, Technical Challenges
 - Exploring one potential solution
-- Wrapping up, Q&A
+- Wrapping up
+- Q&A
 
-I really encourage asking questions during the presentation.
 </br>"There is no end state for application security, we just learn and improve"<!-- .element: style="font-size:0.7em"-->
