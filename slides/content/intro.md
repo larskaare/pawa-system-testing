@@ -56,7 +56,7 @@ It will have an impact on mitigating well known security risks!
 
 > The more I learn about the topic at hand, the more I realize how complex it is. I am not an expert. Life is not simple. All solutions have trade-off's. There are always more than one solution. Context matters - a lot!  <!-- .element: style="font-size:0.8em"-->
 
-Code examples is not production quality!! </br>Some patterns that are discussed are quite risky - be cautious<!-- .element: style="font-size:0.5em"-->
+Code examples is not production quality!! </br>Some patterns that are discussed are quite risky - be cautious</br>Doing a threat model exercise of your testing would be the smart thing to do!<!-- .element: style="font-size:0.5em"-->
 
 ---
 
@@ -70,7 +70,7 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 - Application Security Advocate @ [Equinor](https://loop.equinor.com/en/stories) (an Energy company)
 - Curious since late 60's, abusing computers since mid 80's
 - Living at the west coast of [Norway](https://en.wikipedia.org/wiki/Norway)
-- Married, 3 grown-up kids
+- 1 wife, 3 grown-up kids
 - Hobbies with too little time to pursue (besides coding), cycling, fly-fishing, hunting, hiking
 - larskaare @ [linkedIn](https://www.linkedin.com/in/larskaare/), [twitter](https://twitter.com/larskaare) and [github](https://github.com/larskaare/)
 
@@ -85,12 +85,13 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 
 ## Outline
 
-- Intro (this)
 - Some observations
 - Our demo application/system
 - Test principles, Technical Challenges
 - Exploring one potential solution
 - Wrapping up
 - Q&A
+
+Slides / code will be made available.<!-- .element: style="font-size:0.7em"-->
 
 </br>"There is no end state for application security, we just learn and improve"<!-- .element: style="font-size:0.7em"-->

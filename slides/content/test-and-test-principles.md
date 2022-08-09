@@ -53,7 +53,7 @@ The list is not exhaustive. Teams should have their own list!<!-- .element: clas
 
 ## Time to make some decisions
 
-... all solutions/choices are trade-off's trying to balance risk/cost? ...
+... all solutions/choices are trade-off's trying to balance risk/impact? ...
 
 <div><!-- .element: style="font-size:0.6em"-->
 

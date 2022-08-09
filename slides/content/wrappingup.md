@@ -11,13 +11,15 @@
 
 For our "complex and modern system" we now have:
 
-- A fully automation system test scenario running <!-- .element: class="fragment" data-fragment-index="1" -->
+- A fully automation system test scenario<!-- .element: class="fragment" data-fragment-index="1" -->
 - A fully synthetic test environment <!-- .element: class="fragment" data-fragment-index="2" -->
-- A system with active Authn/z <!-- .element: class="fragment" data-fragment-index="3" -->
-- A system with active security controls <!-- .element: class="fragment" data-fragment-index="4" -->
+- A system test with active Authn/z <!-- .element: class="fragment" data-fragment-index="3" -->
+- A system test with active security controls <!-- .element: class="fragment" data-fragment-index="4" -->
 
-We have broken a few principles to reach this state - </br>the trade-offs could be acceptable? <!-- .element: class="fragment" data-fragment-index="4" -->
-  
+We have broken a few principles to reach this state - </br>the trade-offs could be acceptable? <!-- .element: class="fragment" data-fragment-index="5" -->
+
+Again, a threat modeling exercise on the testing would be smart.</br>What could possibly go wrong 🙂 <!-- .element: class="fragment" data-fragment-index="5" -->
+
 </div>
 
 ---
@@ -26,7 +28,7 @@ We have broken a few principles to reach this state - </br>the trade-offs could 
 
 > Encourage teams to divert more effort on to system testing with authn/z (and other security features) activated.
 
-It is hard, not only a technical challenge </br>- but it is doable - and necessary?
+It is hard, not only a technical challenge </br>- but it is doable - and necessary ...
 
 ---
 
