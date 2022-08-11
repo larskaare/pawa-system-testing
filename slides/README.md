@@ -1,6 +1,6 @@
 # PAWA System Testing Slides
 
-The slides are created with [Reveal.js](https://revealjs.com/), and automatically deployed to [Omnia Radix](https://pawa-slides.app.playground.radix.equinor.com/) on new commits to the `main` branch.
+The slides are created with [Reveal.js](https://revealjs.com/), and automatically deployed to [Omnia Radix](https://pawa-system-test-slides.app.playground.radix.equinor.com/#/) on new commits to the `main` branch.
 
 ## Updating content
 
