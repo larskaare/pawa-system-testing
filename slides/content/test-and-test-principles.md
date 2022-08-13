@@ -45,7 +45,7 @@ The list is not exhaustive. Teams should have their own list!<!-- .element: clas
 
 </div>
 </br>
-<div style="background-color:grey; font-size:0.6em">The choices we make should, as far as possible, not disable the security features of our system!</div><!-- .element: class="fragment" data-fragment-index="8" -->
+<div style="background-color:grey; font-size:0.6em">The choices we make should, as far as possible, not disable the security features of our system! </br>We would like to develop as little as possible of "test supporting code"</div><!-- .element: class="fragment" data-fragment-index="8" -->
 
 <font size="3em">A more elaborate [discussion](https://github.com/larskaare/pawa-system-testing/blob/main/scenario/doc/the-test-challenges.md) is available.</font><!-- .element: class="fragment" data-fragment-index="8" -->
 
@@ -62,7 +62,7 @@ The list is not exhaustive. Teams should have their own list!<!-- .element: clas
 - Our Client component will "know" that's its under test<!-- .element: class="fragment" data-fragment-index="2" -->
   - The "test footprint" should be as little as possible<!-- .element: class="fragment" data-fragment-index="2" -->
   - If in test, we use a different flow (ROPC) to login and get the initial tokens<!-- .element: class="fragment" data-fragment-index="2" -->
-- We use Docker and docker-compose to build and serve the infrastructure<!-- .element: class="fragment" data-fragment-index="3" -->
+- We use Docker and docker-compose to build and serve the system infrastructure<!-- .element: class="fragment" data-fragment-index="3" -->
 - We drive the test from the browser and from the perspective of the end-user.<!-- .element: class="fragment" data-fragment-index="4" -->
   - For this we use [Cypress](https://www.cypress.io/) <!-- .element: class="fragment" data-fragment-index="4" -->
   
