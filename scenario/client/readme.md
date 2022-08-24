@@ -23,6 +23,7 @@ Expects the following environment variables to execute properly
 
     export NODE_ENV=development
     export PORT=3000
+    export HOST=127.0.0.1
     export TOKEN_CACHE_FILE="${HOME}/.tcache/cache.json"
 
     export TENANT_ID=''

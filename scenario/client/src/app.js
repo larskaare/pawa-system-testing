@@ -108,7 +108,7 @@ function build(opts = {}) {
     //Rigging the template rendering system - handlebars
     var handlebars = require('handlebars');
 
-    app.register(require('point-of-view'), {
+    app.register(require('@fastify/view'), {
         engine: {
             handlebars: handlebars,
         },
