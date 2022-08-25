@@ -73,7 +73,7 @@ test('security headers should be ok', async (t) => {
 
 });
 
-test('Ratelimiter should trigger', async (t) => {
+test('Rate limiter should trigger', async (t) => {
 
     //Preparing for new config
     delete require.cache[require.resolve('../src/app.js')];
@@ -90,7 +90,7 @@ test('Ratelimiter should trigger', async (t) => {
     
     response = await app.inject({
         method: 'GET',
-        url: '/',
+        url: '/doc',
     });
 
     t.equal(response.statusCode, 429, 'returns a status code of 429 - too many requests');
@@ -98,7 +98,7 @@ test('Ratelimiter should trigger', async (t) => {
 
     response = await app.inject({
         method: 'GET',
-        url: '/',
+        url: '/doc',
     });
 
     t.equal(
@@ -109,7 +109,7 @@ test('Ratelimiter should trigger', async (t) => {
 
     response = await app.inject({
         method: 'GET',
-        url: '/',
+        url: '/doc',
     });
 
     t.equal(

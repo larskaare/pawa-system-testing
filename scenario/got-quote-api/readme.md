@@ -24,6 +24,7 @@ Expects the following environment variables to execute properly
     export NODE_ENV=development
     export TENANT_ID=""
     export PORT=3200
+    export HOST=127.0.0.1
     export QUOTES_API_URI=""
     export EPISODES_API_URI=""
 

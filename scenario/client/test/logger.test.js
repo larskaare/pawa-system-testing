@@ -38,7 +38,7 @@ test('NODE_ENV should trigger proper log level', async (t) => {
         const loglevel = require('../lib/logger.js').loglevel();
 
         t.ok(
-            __.isEqual(loglevel, { server: 'debug', msal: 3 }),
+            __.isEqual(loglevel, { server: 'info', msal: 2 }),
             'NODE_ENV=production sets loglevel debug'
         );
 

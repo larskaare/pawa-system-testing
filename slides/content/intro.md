@@ -56,7 +56,7 @@ It will have an impact on mitigating well known security risks!
 
 > The more I learn about the topic at hand, the more I realize how complex it is. I am not an expert. Life is not simple. All solutions have trade-off's. There are always more than one solution. Context matters - a lot!  <!-- .element: style="font-size:0.8em"-->
 
-Code examples is not production quality!! </br>Some patterns that are discussed are quite risky - be cautious</br>Doing a threat model exercise of your testing would be the smart thing to do!<!-- .element: style="font-size:0.5em"-->
+Code examples is not production quality!! </br>Some patterns that are discussed are quite risky - be cautious</br>Doing a threat model exercise of your test system would be the smart thing to do!<!-- .element: style="font-size:0.5em"-->
 
 ---
 
@@ -67,7 +67,7 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 <div  style="grid-area: 1 / 1"><!-- .element: style="font-size:0.9em"-->
 
 - Lars Kåre Skjørestad - </br> __Lars__ will do just fine 🙂
-- Application Security Advocate @ [Equinor](https://loop.equinor.com/en/stories) (an Energy company)
+- Application Security Advocate @[Equinor](https://loop.equinor.com/en/stories) (www.equinor.com)
 - Curious since late 60's, abusing computers since mid 80's
 - Living at the west coast of [Norway](https://en.wikipedia.org/wiki/Norway)
 - 1 wife, 3 grown-up kids
@@ -85,9 +85,9 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 
 ## Outline
 
-- Some observations
-- Our demo application/system
-- Test principles, Technical Challenges
+- Observations
+- Presenting our demo system
+- Test principles - Technical Challenges
 - Exploring one potential solution
 - Wrapping up
 - Q&A

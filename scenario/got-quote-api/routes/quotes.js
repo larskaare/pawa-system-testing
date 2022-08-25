@@ -12,7 +12,7 @@ const getRandomQuoteValidation = {
         properties: {
             Authorization: { type: 'string' },
         },
-        require: ['authorization'],
+        required: ['authorization'],
     },
     security: [
         {

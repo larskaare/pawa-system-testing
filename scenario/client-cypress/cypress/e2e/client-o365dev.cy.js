@@ -7,7 +7,7 @@ describe('Client should open and render initial page', () => {
         cy.clearCookies();
         cy.visit('/');
 
-        cy.contains('Modern A-and-A');
+        cy.contains('Game of Thrones Episodes');
         cy.get('#SignIn').should('contain','Sign In');
         cy.getCookies('sessionID').should('exist');
     
@@ -29,7 +29,7 @@ describe('Login should show initial screen', () => {
  
     it('It should be able to signin - to the Office365 Dev Test Tenant', () => {
 
-        cy.contains('Modern A-and-A');
+        cy.contains('Game of Thrones Episodes');
         cy.get('#Logout').should('contain', 'Logout');
 
     });
@@ -45,7 +45,7 @@ describe('Login should show initial screen', () => {
     it('It should be able to log out', () => {
         cy.get('#Logout').click();
 
-        cy.contains('Modern A-and-A');
+        cy.contains('Game of Thrones Episodes');
         cy.get('#SignIn').should('contain', 'Sign In');
 
     });
@@ -84,7 +84,7 @@ describe('The inbox should be shown', () => {
     it('It should be able to log out', () => {
         cy.get('#Logout').click();
 
-        cy.contains('Modern A-and-A');
+        cy.contains('Game of Thrones Episodes');
         cy.get('#SignIn').should('contain', 'Sign In');
     });
 
@@ -132,7 +132,7 @@ describe('We should get a list of GOT Episodes', () => {
     it('It should be able to log out', () => {
         cy.get('#Logout').click();
 
-        cy.contains('Modern A-and-A');
+        cy.contains('Game of Thrones Episodes');
         cy.get('#SignIn').should('contain', 'Sign In');
     });
 

@@ -12,7 +12,7 @@ const getAllEpisodeValidation = {
         properties: {
             Authorization: { type: 'string' },
         },
-        require: ['authorization'],
+        required: ['authorization'],
     },
     security: [
         {
@@ -39,7 +39,7 @@ const getEpisodeValidation = {
         properties: {
             Authorization: { type: 'string' },
         },
-        require: ['authorization'],
+        required: ['authorization'],
     },
     security: [
         {
@@ -70,7 +70,7 @@ const addEpisodeValidation = {
         properties: {
             Authorization: { type: 'string' },
         },
-        require: ['authorization'],
+        required: ['authorization'],
     },
     security: [
         {
@@ -105,7 +105,7 @@ const updateEpisodeValidation = {
         properties: {
             Authorization: { type: 'string' },
         },
-        require: ['authorization'],
+        required: ['authorization'],
     },
     security: [
         {
@@ -132,7 +132,7 @@ const deleteEpisodeValidation = {
         properties: {
             Authorization: { type: 'string' },
         },
-        require: ['authorization'],
+        required: ['authorization'],
     },
     security: [
         {
@@ -144,6 +144,7 @@ const deleteEpisodeValidation = {
 
 //Defining routes
 const routes = [
+
     {
         method: 'GET',
         url: '/api/episodes',

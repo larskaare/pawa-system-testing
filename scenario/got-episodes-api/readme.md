@@ -24,6 +24,7 @@ Expects the following environment variables to execute properly
     export NODE_ENV=production
     export TENANT_ID=""
     export PORT=3100
+    export HOST=127.0.0.1
     export CLIENT_ID=""
     export CLIENT_SECRET=''
     export EPISODES_API_URI=""

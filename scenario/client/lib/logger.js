@@ -1,9 +1,10 @@
 var __ = require('underscore');
 
 //Pino loglevels - https://github.com/pinojs/pino/blob/master/docs/api.md#logger-level
-function loglevel() {
+//https://azuread.github.io/microsoft-authentication-library-for-js/ref/enums/_azure_msal_common.loglevel.html
 
-    if (!__.has(process.env,'NODE_ENV')) {
+function loglevel() {
+    if (!__.has(process.env, 'NODE_ENV')) {
         return {
             server: 'warn',
             msal: 0, //error
@@ -18,8 +19,8 @@ function loglevel() {
         };
     case 'development':
         return {
-            server: 'debug',
-            msal: 3, //verbose
+            server: 'info',
+            msal: 2, //info
         };
     case 'test':
         return {
@@ -32,7 +33,6 @@ function loglevel() {
             msal: 0, //error
         };
     }
-
 }
 
 const logger = require('pino')({

@@ -59,8 +59,7 @@ services:
         QUOTES_API_URI: "${QUOTES_API_URI}"
         
   cypress:
-    # image: cypress/included:9.7.0
-    image: larskaare/cypress_m1:9.5.0
+    image: cypress/included:10.6.0
     container_name: cypress
     tty: true
     depends_on:

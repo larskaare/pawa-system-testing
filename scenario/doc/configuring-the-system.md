@@ -52,4 +52,4 @@ The scenario have been verified with the following technologies:
 - Node 16.15.1 (If you want to run the components outside the containers)
 - Docker (v20.10.16)
 - Docker-compose (v.2.6.0)
-- Cypress (v9.5.0, on intel and with some work on Apple Silicon)
+- Cypress (v10.6.0)

@@ -16,6 +16,10 @@ function loglevel() {
         };
     case 'development':
         return {
+            server: 'info',
+        };
+    case 'test':
+        return {
             server: 'debug',
         };
     default:

@@ -17,9 +17,14 @@ const server = require('../src/app').build({
     port: port
 });
 
-server.listen(port, host, (err) => {
-    if (err) {
-        server.log.error(err);
+const fastifyConf = {
+    'port': port,
+    'host': host
+};
+
+server.listen(fastifyConf)
+    // .then((address) => console.log(`Server is listening on ${address}`))
+    .catch(err => {
+        console.log('Error starting server:', err);
         process.exit(1);
-    }
-});
+    });

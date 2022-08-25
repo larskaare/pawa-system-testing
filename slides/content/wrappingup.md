@@ -13,13 +13,13 @@ For our "complex and modern system" we now have:
 
 - A fully automation system test scenario<!-- .element: class="fragment" data-fragment-index="1" -->
 - A fully synthetic test environment <!-- .element: class="fragment" data-fragment-index="2" -->
-- A system test with active Authn/z <!-- .element: class="fragment" data-fragment-index="3" -->
-- A system test with active security controls <!-- .element: class="fragment" data-fragment-index="4" -->
+  System tests with active Authn/z <!-- .element: class="fragment" data-fragment-index="3" -->
+- System tests with active security controls <!-- .element: class="fragment" data-fragment-index="4" -->
 - We have very little test support code <!-- .element: class="fragment" data-fragment-index="5" -->
 
 We have broken a few principles to reach this state - </br>the trade-offs could be acceptable? <!-- .element: class="fragment" data-fragment-index="6" -->
 
-Again, a threat modeling exercise on the testing would be smart.</br>What could possibly go wrong 🙂 <!-- .element: class="fragment" data-fragment-index="6" -->
+Again, a threat modeling exercise on the test system would be smart.</br>What could possibly go wrong 🙂 <!-- .element: class="fragment" data-fragment-index="6" -->
 
 </div>
 

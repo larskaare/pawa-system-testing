@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD033 -->
-# Test Principles, Technical Challenges
+# Test Principles - </br> Technical Challenges
 
 ---
 
@@ -14,7 +14,7 @@ A few selected could be:
 <div style="font-size:0.7em">
 
 1. We automate more or less all of our testing<!-- .element: class="fragment" data-fragment-index="1" -->
-2. Non-functional tests are as important as the functional ones<!-- .element: class="fragment" data-fragment-index="2" -->
+2. Non-functional tests are as important as the functional ones </br>(performance, usability, reliability, security ....)<!-- .element: class="fragment" data-fragment-index="2" -->
 3. Don't test in production<!-- .element: class="fragment" data-fragment-index="3" -->
 4. Use synthetic test data<!-- .element: class="fragment" data-fragment-index="4" -->
 5. Running code should not know that it's under test<!-- .element: class="fragment" data-fragment-index="5" -->
