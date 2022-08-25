@@ -1,9 +1,6 @@
-## Component: Cypress Client
+# Component: Cypress Client
 
 These are the Cypress system tests for PAWA
-
-> Cypress in Docker does not yet natively support ARM (Mac M1)
-
 
 ## Install
 
@@ -25,10 +22,8 @@ These are the Cypress system tests for PAWA
 
     npm run lint
 
-
 ## Docker
 
 Run from Docker image (rather then installing cypress locally)
 
-    docker run -it --rm -v $PWD:/e2e -w /e2e cypress/included:9.7.0 --browser firefox --config baseUrl=http://host.docker.internal:"$CLIENT_PORT"
-
+    docker run -it --rm -v $PWD:/e2e -w /e2e cypress/included:10.6.0 --browser firefox --config baseUrl=http://host.docker.internal:"$CLIENT_PORT"
