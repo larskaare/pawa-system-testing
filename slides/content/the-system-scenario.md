@@ -1,14 +1,12 @@
 <!-- markdownlint-disable MD033 -->
 
-# Our demo system / application
+# Presenting our demo system
 
 ... context matters ...
 
 ---
 
 ## The Application
-
--- Game Of Thrones Episodes --
 
 ![The App](./content/images/the-app.png)
 
