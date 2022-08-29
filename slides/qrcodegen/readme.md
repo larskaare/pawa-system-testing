@@ -2,7 +2,7 @@
 
 The QR code for easily getting the link to the repo should be updated if its URL changes
 
-```
+```shell
 python -m venv env
 source env/bin/activate
 pip install -r requirements.txt
