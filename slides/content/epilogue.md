@@ -9,6 +9,9 @@ I am larskaare @ [linkedIn](https://www.linkedin.com/in/larskaare/), [twitter](h
 
 >Visit [loop.equinor.com](https://loop.equinor.com) to learn more about the software developer community in Equinor.
 
-</hr>
+---
 
-Slides and code are available at</br> https://github.com/larskaare/pawa-system-testing
+## Slides and code are available at</br> https://github.com/larskaare/pawa-system-testing
+
+<img src="./content/images/repo_qr.png"  width="40%" height="auto">
+
