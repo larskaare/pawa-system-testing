@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD033 -->
-# Test Principles - </br> Technical Challenges
+# Test Principles - </br> Technical Challenges </br>🤨
 
 ---
 
@@ -38,7 +38,7 @@ The list is not exhaustive. Teams should have their own list!<!-- .element: clas
 - Could we mess around with the session objects in the back-end?<!-- .element: class="fragment" data-fragment-index="4" -->
 - Corporate environments/users have MFA enabled.<!-- .element: class="fragment" data-fragment-index="5" -->
   - Makes login automation more or less impossible...<!-- .element: class="fragment" data-fragment-index="5" -->
-- For Azure AD (AAD), we put **test data** into our prod system?<!-- .element: class="fragment" data-fragment-index="6" -->
+- For Azure AD (AAD), we put test data into our prod system?<!-- .element: class="fragment" data-fragment-index="6" -->
 - Could we mock Azure AD with an "oAuth2 Mock Server" component?<!-- .element: class="fragment" data-fragment-index="7" -->
 
 </div>

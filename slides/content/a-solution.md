@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD033 -->
-# 🕵🏻‍♂️ Exploring one potential solution
+# Exploring one potential solution </br>🕵🏻‍♂️ 
 
 ---
 

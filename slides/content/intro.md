@@ -1,7 +1,7 @@
 <!-- .slide: data-background-image="./content/images/appsec-icon.svg" data-background-size="7%" data-background-position="right 2% top 2%"-->
 <!-- markdownlint-disable MD041 MD033-->
 
-# Running system tests with active authn/z
+# Running system tests with active authn/z </br>🕺🏻
 
 ---
 
@@ -52,7 +52,7 @@ It will have an impact on mitigating well known security risks!
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 > The more I learn about the topic at hand, the more I realize how complex it is. I am not an expert. Life is not simple. All solutions have trade-off's. There are always more than one solution. Context matters - a lot!  <!-- .element: style="font-size:0.8em"-->
 
