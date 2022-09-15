@@ -54,8 +54,9 @@ function build(opts = {}) {
                 'worker-src': ["'self'"],
                 'base-uri': ["'none'"],
                 'block-all-mixed-content': [],
-                'upgrade-insecure-requests': [],
+                // 'upgrade-insecure-requests': [],
             },
+            useDefaults: false,
         },
     });
 
