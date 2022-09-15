@@ -15,7 +15,6 @@ Add https://equinor.github.io/appsec/ to your bookmarks
 
 ---
 
-## Slides and code are available at</br> https://github.com/larskaare/pawa-system-testing
+## Slides and code are available at</br> https://github.com/larskaare/pawa-system-testing/tree/edc22
 
 <img src="./content/images/repo_qr.png"  width="40%" height="auto">
-

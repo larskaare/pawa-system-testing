@@ -6,5 +6,5 @@ The QR code for easily getting the link to the repo should be updated if its URL
 python -m venv env
 source env/bin/activate
 pip install -r requirements.txt
-qr 'https://snykonboarding.app.radix.equinor.com/' > ../content/images/snykonboarding_qr.png
+qr 'https://snykonboarding.app.radix.equinor.com/' > ../content/images/repo_qr.png
 ```
