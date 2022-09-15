@@ -5,13 +5,13 @@
 
 ---
 
-# The story starts with /.well-known/security.txt
+# The story starts with [/.well-known/security.txt](https://www.equinor.com/.well-known/security.txt)
 
 ---
 
 ## Objective
 
-> Encourage teams to divert more effort on to system testing with authn/z (and other security features) activated.
+> Encourage teams to divert more effort in to system testing with authn/z (and other security features) activated.
 
 Active = Components running in "production mode", security features like authn/z not mocked or disabled<!-- .element: style="font-size:0.5em"-->
 
@@ -56,6 +56,8 @@ It will have an impact on mitigating well known security risks!
 
 > The more I learn about the topic at hand, the more I realize how complex it is. I am not an expert. Life is not simple. All solutions have trade-off's. There are always more than one solution. Context matters - a lot!  <!-- .element: style="font-size:0.8em"-->
 
+</br>"There is no end state for application security, we just learn and improve"<!-- .element: style="font-size:0.7em"-->
+
 Code examples is not production quality!! </br>Some patterns that are discussed are quite risky - be cautious</br>Doing a threat model exercise of your test system would be the smart thing to do!<!-- .element: style="font-size:0.5em"-->
 
 ---
@@ -67,12 +69,9 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 <div  style="grid-area: 1 / 1"><!-- .element: style="font-size:0.9em"-->
 
 - Lars Kåre Skjørestad - </br> __Lars__ will do just fine 🙂
-- Application Security Advocate @[Equinor](https://loop.equinor.com/en/stories) (www.equinor.com)
-- Curious since late 60's, abusing computers since mid 80's
-- Living at the west coast of [Norway](https://en.wikipedia.org/wiki/Norway)
-- 1 wife, 3 grown-up kids
-- Hobbies with too little time to pursue (besides coding), cycling, fly-fishing, hunting, hiking
-- larskaare @ [linkedIn](https://www.linkedin.com/in/larskaare/), [twitter](https://twitter.com/larskaare) and [github](https://github.com/larskaare/)
+- Application Security Advocate in Equinor's AppSec Team
+- We live in #AppSec on Slack
+- https://equinor.github.io/appsec/
 
 </div>
 
@@ -93,5 +92,3 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 - Q&A
 
 Slides / code will be made available.<!-- .element: style="font-size:0.7em"-->
-
-</br>"There is no end state for application security, we just learn and improve"<!-- .element: style="font-size:0.7em"-->
