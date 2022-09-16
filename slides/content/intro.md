@@ -5,10 +5,6 @@
 
 ---
 
-# The story starts with [/.well-known/security.txt](https://www.equinor.com/.well-known/security.txt)
-
----
-
 ## Objective
 
 > Encourage teams to divert more effort in to system testing with authn/z (and other security features) activated.
