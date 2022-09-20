@@ -26,3 +26,9 @@ To provide a hash for the .js and .css file provided in the source do:
 
 - `cat ./content/js/app.js | openssl dgst -sha512 -binary | openssl base64 -A`
 - `cat ./content/css/equinor.css | openssl dgst -sha512 -binary | openssl base64 -A`
+
+### Exporting Slides to PDF
+
+I use https://github.com/astefanutti/decktape to export slides to PDF.
+
+The command looks something like this: `decktape -s 1920x1080 http://localhost:5500 ./pdf/slides.pdf`
