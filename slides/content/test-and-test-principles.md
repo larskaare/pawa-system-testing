@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD033 -->
-# Test Principles - </br> Technical Challenges
+# Test Principles - </br> Technical Challenges </br>🤨
 
 ---
 
@@ -38,13 +38,12 @@ The list is not exhaustive. Teams should have their own list!<!-- .element: clas
 - Could we mess around with the session objects in the back-end?<!-- .element: class="fragment" data-fragment-index="4" -->
 - Corporate environments/users have MFA enabled.<!-- .element: class="fragment" data-fragment-index="5" -->
   - Makes login automation more or less impossible...<!-- .element: class="fragment" data-fragment-index="5" -->
-  - And we should not put test users in our prod system anyway?<!-- .element: class="fragment" data-fragment-index="5" -->
-- Which IAM solution to use (Corporate Prod, Development)?<!-- .element: class="fragment" data-fragment-index="6" -->
-  - The same vendor we use in prod, Azure AD (AAD) for us.<!-- .element: class="fragment" data-fragment-index="6" -->
-- Could we mock the IAM with an "oAuth2 Mock Server" component?<!-- .element: class="fragment" data-fragment-index="7" -->
+- For Azure AD (AAD), we put test data into our prod system?<!-- .element: class="fragment" data-fragment-index="6" -->
+- Could we mock Azure AD with an "oAuth2 Mock Server" component?<!-- .element: class="fragment" data-fragment-index="7" -->
 
 </div>
 </br>
+<hr>
 <div style="background-color:grey; font-size:0.6em">The choices we make should, as far as possible, not disable the security features of our system! </br>We would like to develop as little as possible of "test supporting code"</div><!-- .element: class="fragment" data-fragment-index="8" -->
 
 <font size="3em">A more elaborate [discussion](https://github.com/larskaare/pawa-system-testing/blob/main/scenario/doc/the-test-challenges.md) is available.</font><!-- .element: class="fragment" data-fragment-index="8" -->
@@ -53,19 +52,19 @@ The list is not exhaustive. Teams should have their own list!<!-- .element: clas
 
 ## Time to make some decisions
 
-... all solutions/choices are trade-off's trying to balance risk/impact? ...
+... all choices have trade-off's, we try to balance risk/impact ...
 
 <div><!-- .element: style="font-size:0.6em"-->
 
-- We use Azure AD, using the MS O365 developer program to acquire separate Azure test environment
-- We create synthetic test users with out MFA to support automated tests <!-- .element: class="fragment" data-fragment-index="1" -->
-- Our Client component will "know" that's its under test<!-- .element: class="fragment" data-fragment-index="2" -->
-  - The "test footprint" should be as little as possible<!-- .element: class="fragment" data-fragment-index="2" -->
-  - If in test, we use a different flow (ROPC) to login and get the initial tokens<!-- .element: class="fragment" data-fragment-index="2" -->
-- We use Docker and docker-compose to build and serve the system infrastructure<!-- .element: class="fragment" data-fragment-index="3" -->
-- We drive the test from the browser and from the perspective of the end-user.<!-- .element: class="fragment" data-fragment-index="4" -->
-  - For this we use [Cypress](https://www.cypress.io/) <!-- .element: class="fragment" data-fragment-index="4" -->
+- We use Azure AD, using the MS O365 developer program to acquire separate Azure test environment<!-- .element: class="fragment" data-fragment-index="1" -->
+- We create synthetic test users without MFA to support automated tests <!-- .element: class="fragment" data-fragment-index="2" -->
+- Our Client component will "know" that's its under test<!-- .element: class="fragment" data-fragment-index="3" -->
+  - The "test footprint" should be as little as possible<!-- .element: class="fragment" data-fragment-index="4" -->
+  - If in test, we use a different flow (ROPC) to login and get the initial tokens<!-- .element: class="fragment" data-fragment-index="5" -->
+- We use Docker and docker-compose to build and serve the system infrastructure<!-- .element: class="fragment" data-fragment-index="6" -->
+- We drive the test from the browser and from the perspective of the end-user.<!-- .element: class="fragment" data-fragment-index="7" -->
+  - For this we use  <!-- .element: class="fragment" data-fragment-index="8" -->[Cypress](https://www.cypress.io/) <!-- .element: class="fragment" data-fragment-index="8" -->
   
 </div>
 
-The system tests must be fully automated and be able to execute in a pipeline.<!-- .element: style="font-size:0.8em" class="fragment" data-fragment-index="5"-->
+The system tests must be fully automated and be able to execute in a pipeline.<!-- .element: style="font-size:0.8em" class="fragment" data-fragment-index="9"-->
