@@ -7,6 +7,7 @@ process.env.CLIENT_ID = 'B';
 process.env.CLIENT_SECRET = 'C';
 process.env.TOKEN_CACHE_FILE = './test/cache.json';
 process.env.EPISODES_API_URL = 'http://localhost:3100/';
+process.env.REDIRECT_URI = 'http://localhost:3000/callback';
 
 const { test } = require('tap');
 const authUtils = require('../lib/auth-utils.js');
