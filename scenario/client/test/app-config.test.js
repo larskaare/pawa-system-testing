@@ -12,6 +12,7 @@ test('Environment Config should be persisted', (t) => {
     process.env.CLIENT_ID = 'B';
     process.env.CLIENT_SECRET = 'C';
     process.env.TOKEN_CACHE_FILE = './test/cache.json';
+    process.env.REDIRECT_URI= 'http://localhost:3000/callback';
 
     delete require.cache[require.resolve('../lib/app-config.js')];
     const appConfig = require('../lib/app-config.js');
