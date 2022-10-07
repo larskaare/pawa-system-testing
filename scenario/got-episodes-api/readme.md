@@ -4,8 +4,8 @@ The is the Episodes API. For authenticated requests the api will return a list o
 
 ## Prerequisites
 
-- Node 16.15.1 (Tested)
-- Docker (v20.10.14 tested)
+- Node 16.17.1 (Tested)
+- Docker (v20.10.17 tested)
 
 ## Install
 
