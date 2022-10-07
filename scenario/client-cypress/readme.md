@@ -26,4 +26,4 @@ These are the Cypress system tests for PAWA
 
 Run from Docker image (rather then installing cypress locally)
 
-    docker run -it --rm -v $PWD:/e2e -w /e2e cypress/included:10.6.0 --browser firefox --config baseUrl=http://host.docker.internal:"$CLIENT_PORT"
+    docker run -it --rm -v $PWD:/e2e -w /e2e cypress/included:10.9.0 --browser firefox --config baseUrl=http://host.docker.internal:"$CLIENT_PORT"
