@@ -2,14 +2,9 @@
 version: v1.25.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  SNYK-JS-MINIMIST-2429795:
-    - '*':
-        reason: 'No fix, dev dep'
-        expires: 2022-07-03T06:57:57.507Z
-        created: 2022-06-03T06:57:57.508Z
   SNYK-JS-ANSIREGEX-1583908:
     - '*':
-        reason: 'No fix, dev dep'
-        expires: 2022-07-03T06:58:04.930Z
-        created: 2022-06-03T06:58:04.934Z
+        reason: Dev dependeny
+        expires: 2022-12-15T00:00:00.000Z
+        created: 2022-10-07T08:38:07.779Z
 patch: {}
