@@ -6,6 +6,7 @@ var auth = require('../lib/auth.js');
 
 //Adding route validators
 const getAllEpisodeValidation = {
+    description: 'List all GOT episodes',
     params: {},
     headers: {
         type: 'object',

@@ -34,11 +34,8 @@ function build(opts= {}) {
             // reply.code(429).send('Rate limit');
         },
     });
-
-
-    //Adding swagger documentation
+    
     app.register(require('@fastify/swagger'), {
-        routePrefix: '/doc',
         swagger: {
             info: {
                 title: 'GOT Episodes Api',
@@ -50,30 +47,33 @@ function build(opts= {}) {
                 description: 'Find more info here',
             },
             host: 'localhost:3100',
-            schemes: ['http','https'],
+            schemes: ['http', 'https'],
             consumes: ['application/json'],
             produces: ['application/json'],
-            tags: [
-                { name: 'api/episodes', description: 'Listing episodes' }
-            ],
+            tags: [{ name: 'api/episodes', description: 'Working with GOT episodes' }],
             securityDefinitions: {
                 Bearer: {
                     type: 'apiKey',
                     name: 'Authorization:',
-                    in: 'header'
+                    in: 'header',
                 },
             },
         },
-        uiConfig: {
-            docExpansion: 'list',
-            deepLinking: false,
-        },
-        staticCSP: true,
-        transformStaticCSP: (header) => header,
-        exposeRoute: true,
     });
 
-
+    app.register(require('@fastify/swagger-ui'), {
+        routePrefix: '/doc',
+        uiConfig: {
+            docExpansion: 'full',
+            deepLinking: false,
+        },
+        staticCSP: false,
+        transformStaticCSP: (header) => {
+            console.log(header);
+            return header;
+        },
+        exposeRoute: true,
+    });
 
     //Declare a root route
     app.get('/', function (req, reply) {
@@ -102,7 +102,6 @@ function build(opts= {}) {
     episodeRoutes.forEach((route) => {
         app.route(route);
     });
-
 
     return app;
 
