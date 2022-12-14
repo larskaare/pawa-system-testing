@@ -12,7 +12,7 @@ module.exports = function (cacheLocation) {
     const beforeCacheAccess = (cacheContext) => {
         return new Promise((resolve, reject) => {
             if (fs.existsSync(cacheLocation)) {
-                fs.readFile(cacheLocation, 'utf-8', (err, data) => {
+                fs.readFile(cacheLocation, 'utf8', (err, data) => {
                     if (err) {
                         reject();
                     } else {
