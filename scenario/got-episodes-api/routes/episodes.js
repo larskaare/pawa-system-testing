@@ -145,7 +145,11 @@ const deleteEpisodeValidation = {
 
 //Defining routes
 const routes = [
-
+    {
+        method: 'GET',
+        url: '/',
+        handler: episodesController.showHomePage,
+    },
     {
         method: 'GET',
         url: '/api/episodes',
