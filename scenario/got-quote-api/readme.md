@@ -4,8 +4,8 @@ The is the Quotes API. For authenticated requests the api will return a random q
 
 ## Prerequisites
 
-- Node 16.17.1 (Tested)
-- Docker (v20.10.17 tested)
+- Node 18.12.1 (Tested)
+- Docker (v20.10.21 tested)
 
 ## Install
 

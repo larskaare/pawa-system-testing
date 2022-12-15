@@ -1,6 +1,6 @@
 # -- Base node image with client
 #
-FROM node:18.12.1-alpine3.17docke AS base
+FROM node:18.12.1-alpine3.17 AS base
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN mkdir -p ./data ./lib ./public ./src./views

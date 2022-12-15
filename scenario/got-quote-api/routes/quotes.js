@@ -25,11 +25,16 @@ const getRandomQuoteValidation = {
 const routes = [
     {
         method: 'GET',
+        url: '/',
+        handler: quotesController.showHomePage,
+    },
+    {
+        method: 'GET',
         url: '/api/quote',
         schema: getRandomQuoteValidation,
         preHandler: auth.authVerify,
         handler: quotesController.getRandomQuote,
-    }
+    },
 ];
 
 module.exports = routes;

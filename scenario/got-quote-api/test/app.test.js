@@ -8,7 +8,7 @@ const { test } = require('tap');
 var sinon = require('sinon');
 
 test('requests the "/" route', async (t) => {
-    const app = require('../src/app').build();
+    const app = await require('../src/app').build();
 
     const response = await app.inject({
         method: 'GET',
@@ -23,13 +23,13 @@ test('requests the "/" route', async (t) => {
     t.end();
 });
 
-test('requests the swagger "/doc" route', (t) => {
+test('requests the swagger "/doc" route', async (t) => {
 
     // t.beforeEach(function (t) {});
 
     // t.afterEach(function (t) {});
 
-    const app = require('../src/app').build();
+    const app =  await require('../src/app').build();
 
     t.test('Request to /doc should redirect to static', async (t) => {
     
@@ -44,6 +44,7 @@ test('requests the swagger "/doc" route', (t) => {
     });
 
     t.test('Request to /doc/static/index.html should render swagger doc', async (t) => {
+        
         const response = await app.inject({
             method: 'GET',
             url: '/doc/static/index.html',
@@ -61,7 +62,7 @@ test('requests the swagger "/doc" route', (t) => {
 
 test('security headers should be ok', async (t) => {
    
-    const app = require('../src/app').build();
+    const app = await require('../src/app').build();
 
     const response = await app.inject({
         method: 'GET',
@@ -84,7 +85,7 @@ test('Rate limiter should trigger', async (t) => {
     sinon.stub(appConfig, 'rateLimitAllowList').returns([]);
     sinon.stub(appConfig, 'maxRateLimit').returns(0);
 
-    const app = require('../src/app').build();
+    const app = await require('../src/app').build();
 
     var response;
     

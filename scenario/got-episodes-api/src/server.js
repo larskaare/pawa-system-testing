@@ -17,7 +17,7 @@ const start = async () => {
     const server = await require('../src/app').build({
         logger: {
             level: loglevel,
-            name: 'API Server',
+            name: 'Episodes API Server',
         },
         port: port,
     });

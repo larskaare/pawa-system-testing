@@ -10,10 +10,6 @@ function loglevel() {
     }
 
     switch (process.env.NODE_ENV) {
-    case 'production':
-        return {
-            server: 'warn',
-        };
     case 'development':
         return {
             server: 'info',
@@ -23,6 +19,7 @@ function loglevel() {
             server: 'debug',
         };
     default:
+    //default for production
         return {
             server: 'warn',
         };
