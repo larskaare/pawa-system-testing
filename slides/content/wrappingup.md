@@ -25,12 +25,14 @@ Again, a threat modeling exercise on the test system would be smart.</br>What co
 
 ---
 
-## Our Objective
+## Talk objective
 
-> Encourage teams to divert more effort in to system testing with authn/z (and other security features) activated.
+> Make teams curious on diverting more effort into system testing with authn/z (and other security features) activated.
 
-It is hard, not only a technical challenge </br>- but it is doable - and necessary ...
+<hr>
+
+It is hard, not only a technical challenge </br>- but it is doable - and imho necessary ...
 
 ---
 
-## Q&A<!-- .element: style="font-size:5.5em"-->
+## Q&A <!-- .element: style="font-size:5.5em"-->

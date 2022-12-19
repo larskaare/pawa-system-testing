@@ -4,10 +4,13 @@
 # Running system tests with active authn/z </br>🕺🏻
 
 ---
+## The story starts with </br>/.well-known/security.txt 
 
-## Objective
+---
 
-> Encourage teams to divert more effort in to system testing with authn/z (and other security features) activated.
+## Talk objective
+
+> Make teams curious on diverting more effort into system testing with authn/z (and other security features) activated.
 
 Active = Components running in "production mode", security features like authn/z not mocked or disabled<!-- .element: style="font-size:0.5em"-->
 
@@ -66,8 +69,12 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 
 - Lars Kåre Skjørestad - </br> __Lars__ will do just fine 🙂
 - Application Security Advocate in Equinor's AppSec Team
-- We live in #AppSec on Slack
-- https://equinor.github.io/appsec/
+- Abusing computers since mid 80's
+- Living at the west coast of Norway
+- 1 wife, 3 grown-up kids
+- Hobbies with too little time to pursue (besides coding), cycling, fly-fishing, hunting, hiking
+- larskaare @ linkedIn, twitter, github and Mastodon @infosec.exchange
+- https://appsec.equinor.com
 
 </div>
 
@@ -87,4 +94,4 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 - Wrapping up
 - Q&A
 
-Slides / code will be made available.<!-- .element: style="font-size:0.7em"-->
+Slides and code are open to all.<!-- .element: style="font-size:0.7em"-->
