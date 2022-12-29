@@ -116,7 +116,7 @@ test('Rate limiter should trigger', async (t) => {
     t.equal(
         response.statusCode,
         403,
-        'returns a status code of 403 - forbidden  whan ban limit for ratelimiter is reached'
+        'returns a status code of 403 - forbidden  when ban limit for rate limiter is reached'
     );
 
 
