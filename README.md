@@ -2,7 +2,7 @@
 
 ## Purpose
 
-> Encourage teams to divert more effort in to system testing with authn/z (and other security features) activated.
+> Make teams curious on diverting more effort into system testing with authn/z (and other security features) activated.
 
 ## Context
 

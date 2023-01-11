@@ -6,19 +6,19 @@ const rateLimitAllowList = require('../lib/app-config').rateLimitAllowList();
 const maxRateLimit = require('../lib/app-config').maxRateLimit();
 const port = require('../lib/app-config').port;
 
-function build(opts= {}) {
+async function build(opts= {}) {
 
     const app = fastify(opts);
 
     logger.info('Initial api server plumbing');
 
     //Installing support for CORS headers
-    app.register(require('@fastify/cors'),{
+    await app.register(require('@fastify/cors'),{
         origin: '*',
     });
 
     //Registering a api rate limiter
-    app.register(require('@fastify/rate-limit'), {
+    await app.register(require('@fastify/rate-limit'), {
         max: maxRateLimit,
         timeWindow: '1 minute',
         ban: 2,
@@ -36,65 +36,53 @@ function build(opts= {}) {
         },
     });
 
-
-    //Adding swagger documentation
-    app.register(require('@fastify/swagger'), {
-        routePrefix: '/doc',
+    await app.register(require('@fastify/swagger'), {
         swagger: {
             info: {
                 title: 'GOT Quotes Api',
-                description: 'Serving Gorge RR Quotes from GOT',
-                version: '0.5.0',
+                description: 'Prodly Serving Quotes from GOT',
+                version: '0.6.0',
             },
             externalDocs: {
                 url: 'https://swagger.io',
                 description: 'Find more info here',
             },
             host: 'localhost:' + port,
-            schemes: ['http','https'],
+            schemes: ['http', 'https'],
             consumes: ['application/json'],
             produces: ['application/json'],
             tags: [
-                { name: 'api/quote', description: 'Get random quote' }
+                {
+                    name: 'api/quote',
+                    description: 'Working with GOT episodes',
+                },
             ],
             securityDefinitions: {
                 Bearer: {
                     type: 'apiKey',
                     name: 'Authorization:',
-                    in: 'header'
+                    in: 'header',
                 },
             },
         },
+    });
+
+    await app.register(require('@fastify/swagger-ui'), {
+        routePrefix: '/doc',
         uiConfig: {
-            docExpansion: 'list',
+            docExpansion: 'full',
             deepLinking: false,
         },
-        staticCSP: true,
-        transformStaticCSP: (header) => header,
+        staticCSP: false,
+        transformStaticCSP: (header) => {
+            console.log(header);
+            return header;
+        },
         exposeRoute: true,
     });
 
-
-
-    //Declare a root route
-    app.get('/', function (req, reply) {
-
-        const welcomeMessage = `
-        
-    The Game of Thrones Random Quote Api
-        
-    /api/quote
-    /doc
-
-    Authentication is required for all endpoints (expect for / and /doc)
-
-    `;
-
-        reply.send(welcomeMessage);
-    });
-
     //Register routes
-    const quoteRoutes = require('../routes/quotes');
+    const quoteRoutes = await require('../routes/quotes');
     quoteRoutes.forEach((route) => {
         app.route(route);
     });

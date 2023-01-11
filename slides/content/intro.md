@@ -4,10 +4,13 @@
 # Running system tests with active authn/z </br>🕺🏻
 
 ---
+## The story starts with </br>/.well-known/security.txt 
 
-## Objective
+---
 
-> Encourage teams to divert more effort in to system testing with authn/z (and other security features) activated.
+## Talk objective
+
+> Make teams curious on diverting more effort into system testing with authn/z (and other security features) activated.
 
 Active = Components running in "production mode", security features like authn/z not mocked or disabled<!-- .element: style="font-size:0.5em"-->
 
@@ -52,9 +55,9 @@ It will have an impact on mitigating well known security risks!
 
 > The more I learn about the topic at hand, the more I realize how complex it is. I am not an expert. Life is not simple. All solutions have trade-off's. There are always more than one solution. Context matters - a lot!  <!-- .element: style="font-size:0.8em"-->
 
-</br>"There is no end state for application security, we just learn and improve"<!-- .element: style="font-size:0.7em"-->
+</br>🧘🏻‍♂️ There is no end state for application security, we just learn and improve 🧘🏻‍♂️<!-- .element: style="font-size:0.7em"-->
 
-Code examples is not production quality!! </br>Some patterns that are discussed are quite risky - be cautious</br>Doing a threat model exercise of your test system would be the smart thing to do!<!-- .element: style="font-size:0.5em"-->
+Code examples is not production quality!! </br>Some patterns that are discussed are risky - be cautious</br>I recommend to threat model your test system!<!-- .element: style="font-size:0.65em"-->
 
 ---
 
@@ -62,12 +65,17 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 
 <div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 50% 50%;">
 
-<div  style="grid-area: 1 / 1"><!-- .element: style="font-size:0.9em"-->
+<div  style="grid-area: 1 / 1"><!-- .element: style="font-size:0.8em"-->
 
 - Lars Kåre Skjørestad - </br> __Lars__ will do just fine 🙂
+- Software Developer
 - Application Security Advocate in Equinor's AppSec Team
-- We live in #AppSec on Slack
-- https://equinor.github.io/appsec/
+- Abusing computers since mid 80's
+- Living at the west coast of Norway
+- 1 wife, 3 grown-up kids
+- Hobbies with too little time to pursue (besides coding), Gran Fondo cycling, fly-fishing
+- <a style="color:red">larskaare</a> @ linkedIn, twitter, github and @infosec.exchange (🐘)
+- https://appsec.equinor.com
 
 </div>
 
@@ -87,4 +95,4 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 - Wrapping up
 - Q&A
 
-Slides / code will be made available.<!-- .element: style="font-size:0.7em"-->
+(I will share the link to slides and code)<!-- .element: style="font-size:0.7em"-->

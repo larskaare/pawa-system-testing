@@ -4,8 +4,8 @@ The is the client. It will provide the ability to sign-in, show content of your 
 
 ## Prerequisites
 
-- Node 16.17.1 (Tested)
-- Docker (v20.10.17 tested)
+- Node 18.12.1 (lts/hydrogen - tested)
+- Docker (v20.10.21 tested)
 
 ## Install
 

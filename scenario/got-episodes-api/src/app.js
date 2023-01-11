@@ -5,19 +5,19 @@ const fastify = require('fastify');
 const rateLimitAllowList = require('../lib/app-config').rateLimitAllowList();
 const maxRateLimit = require('../lib/app-config').maxRateLimit();
 
-function build(opts= {}) {
+async function build(opts= {}) {
 
     const app = fastify(opts);
 
     logger.info('Initial api server plumbing');
 
     //Installing support for CORS headers
-    app.register(require('@fastify/cors'),{
+    await app.register(require('@fastify/cors'),{
         origin: '*',
     });
 
     //Registering a api rate limiter
-    app.register(require('@fastify/rate-limit'), {
+    await app.register(require('@fastify/rate-limit'), {
         max: maxRateLimit,
         timeWindow: '1 minute',
         ban: 2,
@@ -34,11 +34,8 @@ function build(opts= {}) {
             // reply.code(429).send('Rate limit');
         },
     });
-
-
-    //Adding swagger documentation
-    app.register(require('@fastify/swagger'), {
-        routePrefix: '/doc',
+    
+    await app.register(require('@fastify/swagger'), {
         swagger: {
             info: {
                 title: 'GOT Episodes Api',
@@ -50,59 +47,39 @@ function build(opts= {}) {
                 description: 'Find more info here',
             },
             host: 'localhost:3100',
-            schemes: ['http','https'],
+            schemes: ['http', 'https'],
             consumes: ['application/json'],
             produces: ['application/json'],
-            tags: [
-                { name: 'api/episodes', description: 'Listing episodes' }
-            ],
+            tags: [{ name: 'api/episodes', description: 'Working with GOT episodes' }],
             securityDefinitions: {
                 Bearer: {
                     type: 'apiKey',
                     name: 'Authorization:',
-                    in: 'header'
+                    in: 'header',
                 },
             },
         },
+    });
+
+    await app.register(require('@fastify/swagger-ui'), {
+        routePrefix: '/doc',
         uiConfig: {
-            docExpansion: 'list',
+            docExpansion: 'full',
             deepLinking: false,
         },
-        staticCSP: true,
-        transformStaticCSP: (header) => header,
+        staticCSP: false,
+        transformStaticCSP: (header) => {
+            console.log(header);
+            return header;
+        },
         exposeRoute: true,
     });
 
-
-
-    //Declare a root route
-    app.get('/', function (req, reply) {
-
-        const welcomeMessage = `
-        
-    The Game of Thrones Episodes API
-        
-    /api/episodes
-
-    /api/episodes/1
-    GET to get specific episode
-    PUT to update specific episode
-    POST to add episode
-    DELETE to delete episode
-
-    Authentication is required for all endpoints (expect for /)
-
-    `;
-
-        reply.send(welcomeMessage);
-    });
-
     //Register routes to handle episodes
-    const episodeRoutes = require('../routes/episodes');
+    const episodeRoutes = await require('../routes/episodes');
     episodeRoutes.forEach((route) => {
         app.route(route);
     });
-
 
     return app;
 

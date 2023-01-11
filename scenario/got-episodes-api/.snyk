@@ -2,9 +2,14 @@
 version: v1.25.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
+  SNYK-JS-JSON5-3182856:
+    - '*':
+        reason: Dev Dependency
+        expires: 2023-06-30T00:00:00.000Z
+        created: 2022-12-27T11:43:59.735Z
   SNYK-JS-ANSIREGEX-1583908:
     - '*':
-        reason: Dev dependeny
-        expires: 2022-12-15T00:00:00.000Z
-        created: 2022-10-07T08:34:14.173Z
+        reason: Dev Dependency
+        expires: 2023-06-30T00:00:00.000Z
+        created: 2022-12-27T11:44:12.617Z
 patch: {}

@@ -37,14 +37,9 @@ test('AuthVerify should behave as expected', (t) => {
             }
         };
 
-        //Creating object to stubb done
-        const done = function () {
-            return true;
-        };
-
         sinon.spy(reply);
 
-        await auth.authVerify(request, reply, done);
+        await auth.authVerify(request, reply);
 
         t.ok(reply.code.calledOnce, 'Reply - code called once');            
         t.ok(reply.code.calledWith(401),'and returned a 401 - unauthorized');
@@ -72,14 +67,9 @@ test('AuthVerify should behave as expected', (t) => {
             },
         };
 
-        //Creating object to stubb done
-        const done = function () {
-            return true;
-        };
-
         sinon.spy(reply);
 
-        await auth.authVerify(request, reply, done);
+        await auth.authVerify(request, reply);
 
         t.ok(reply.code.calledOnce, 'Reply - code called once');
         t.ok(reply.code.calledWith(400), 'and returned a 400 - bad request');

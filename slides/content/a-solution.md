@@ -31,7 +31,7 @@ Exploring the test mode code and the login<!-- .element: style="font-size:0.5em"
 
 - We use Cypress to drive the tests
 
-> Demo of Cypress running the test
+> Demo of Cypress running the test </br>(gui and headless)
 
 Exploring developing tests<!-- .element: style="font-size:0.5em"-->
 

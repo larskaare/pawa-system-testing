@@ -1,40 +1,42 @@
-//Client Tests
+
+function logIn() {
+    cy.visit('/');
+    cy.get('#SignIn').click();
+}
 
 describe('Client should open and render initial page', () => {
 
-    it('Open client', () => {
+    it('Opens initial web page', () => {
 
-        cy.clearCookies();
         cy.visit('/');
+        cy.contains('Game of Thrones Episodes');
+        cy.get('#SignIn').should('contain', 'Sign In');
+        cy.getCookies('sessionID').should('exist');
+        
+    });
+ 
+    it('Should be able to sign in', () => {
+        cy.visit('/');
+        cy.get('#SignIn').click();
 
         cy.contains('Game of Thrones Episodes');
-        cy.get('#SignIn').should('contain','Sign In');
-        cy.getCookies('sessionID').should('exist');
-    
+        cy.get('#Logout').should('contain', 'Logout');  
     });
 
 });
 
-describe('Login should show initial screen', () => {
+describe('Main menu should render and we should be able to log-out', () => {
 
-    before(() => {
-        cy.clearCookies();
-        cy.visit('/');
-        cy.get('#SignIn').click();
-    });
-
-    beforeEach(() => {
-        Cypress.Cookies.preserveOnce('sessionID');
-    });
- 
-    it('It should be able to signin - to the Office365 Dev Test Tenant', () => {
+    it('We sign in', () => {
+        logIn();
 
         cy.contains('Game of Thrones Episodes');
         cy.get('#Logout').should('contain', 'Logout');
-
     });
 
-    it('The initial screen should contain the basic menu', () => {
+   
+    it('Main meny contains correct items', () => {
+        logIn();
 
         cy.get('#Logout').should('contain', 'Logout');
         cy.get('#showinbox').should('contain', 'Show Inbox');        
@@ -42,7 +44,9 @@ describe('Login should show initial screen', () => {
         cy.get('#showindex').should('contain','Home');
     });
 
-    it('It should be able to log out', () => {
+    it('We do a log-out', () => {
+        logIn();
+
         cy.get('#Logout').click();
 
         cy.contains('Game of Thrones Episodes');
@@ -52,25 +56,19 @@ describe('Login should show initial screen', () => {
 
 });
 
-describe('The inbox should be shown', () => {
-
-    before(() => {
-        cy.clearCookies();
-        cy.visit('/');
-        cy.get('#SignIn').click();
-    });
+describe('The inbox should be accessible', () => {
 
     beforeEach(() => {
-        Cypress.Cookies.preserveOnce('sessionID');
+        logIn();
     });
 
-    it('It should show inbox',  () => {
+    it('We can select the inbox',  () => {
    
         cy.get('#showinbox').click();
        
     });
 
-    it('It should be the inbox of the test user Adele', () => {
+    it('The Inbox shows data for test user Adele', () => {
 
         cy.fixture('test-user','utf-8').then((testUser) => {
         
@@ -81,25 +79,12 @@ describe('The inbox should be shown', () => {
         });        
     });
 
-    it('It should be able to log out', () => {
-        cy.get('#Logout').click();
-
-        cy.contains('Game of Thrones Episodes');
-        cy.get('#SignIn').should('contain', 'Sign In');
-    });
-
 });
 
 describe('We should get a list of GOT Episodes', () => {
 
-    before(() => {
-        cy.clearCookies();
-        cy.visit('/');
-        cy.get('#SignIn').click();
-    });
-
     beforeEach(() => {
-        Cypress.Cookies.preserveOnce('sessionID');
+        logIn();
     });
 
     it('We should be able to log in and select got episodes', () => {
@@ -109,35 +94,27 @@ describe('We should get a list of GOT Episodes', () => {
     });
 
 
-    it('It should request GOT episodes', () => {
+    it('We should request GOT episodes', () => {
+        cy.get('#got').click();
         cy.contains('Got Episodes');
         cy.contains('Winter is coming');
         cy.contains('Quote:');
     });
 
-    it('It should be able to go home', () => {
+    it('We should be able to select HOME', () => {
         cy.get('#showindex').click();
         cy.contains('List my inbox');
         cy.get('#Logout').should('contain', 'Logout');
     });
 
-    it('It should request GOT episodes directly', () => {
-    //    cy.visit('http://localhost:3000/login');
+    it('We should request GOT episodes directly', () => {
         cy.visit('/got');
         cy.contains('Got Episodes');
         cy.contains('Winter is coming');
         cy.contains('Quote:');
     });
 
-    it('It should be able to log out', () => {
-        cy.get('#Logout').click();
-
-        cy.contains('Game of Thrones Episodes');
-        cy.get('#SignIn').should('contain', 'Sign In');
-    });
-
 });
-
 
 describe('Client should serve proper headers', () => {
 

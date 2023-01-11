@@ -43,14 +43,18 @@ async function getTokenAuthCode (request, reply) {
     // Initialize CryptoProvider instance
     const cryptoProvider = new msal.CryptoProvider();
     // Generate PKCE Codes before starting the authorization flow
-    await cryptoProvider.generatePkceCodes().then(({ verifier, challenge }) => {
-        // Set generated PKCE Codes as app variables
-        request.session.pkceCodes.verifier = verifier;
-        request.session.pkceCodes.challenge = challenge;
+    await cryptoProvider.generatePkceCodes()
+        .then(({ verifier, challenge }) => {
+            // Set generated PKCE Codes as app variables
+            request.session.pkceCodes.verifier = verifier;
+            request.session.pkceCodes.challenge = challenge;
 
-        authCodeUrlParameters.codeChallenge = challenge;
-        authCodeUrlParameters.codeChallengeMethod = request.session.pkceCodes.challengeMethod;
-    });
+            authCodeUrlParameters.codeChallenge = challenge;
+            authCodeUrlParameters.codeChallengeMethod = request.session.pkceCodes.challengeMethod;
+        })
+        .catch(error => {
+            logger.error('Unable to generate PKCE codes in MSAL: ' + error);
+        });
  
     logger.debug(request.session.pkceCodes);
 

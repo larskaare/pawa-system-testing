@@ -25,7 +25,7 @@ const rateLimitAllowList = function () {
 };
 
 const maxRateLimit = function () {
-    return 500;
+    return 100;
 };
 
 function isConfigOk() {

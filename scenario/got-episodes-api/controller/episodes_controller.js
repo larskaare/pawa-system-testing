@@ -83,10 +83,31 @@ const deleteEpisode = async (req) => {
     return { msg: `Episode with ID ${id} is deleted` };
 };
 
+const showHomePage = async () => {
+    const welcomeMessage = `
+        
+    The Game of Thrones Episodes API
+        
+    /api/episodes
+
+    /api/episodes/1
+    GET to get specific episode
+    PUT to update specific episode
+    POST to add episode
+    DELETE to delete episode
+
+    Authentication is required for all endpoints (expect for /)
+
+    `;
+
+    return welcomeMessage;
+};
+
 module.exports = {
     getAllEpisodes,
     getEpisode,
     addEpisode,
     updateEpisode,
     deleteEpisode,
+    showHomePage
 };

@@ -6,6 +6,7 @@ var auth = require('../lib/auth.js');
 
 //Adding route validators
 const getAllEpisodeValidation = {
+    description: 'List all GOT episodes',
     params: {},
     headers: {
         type: 'object',
@@ -144,7 +145,11 @@ const deleteEpisodeValidation = {
 
 //Defining routes
 const routes = [
-
+    {
+        method: 'GET',
+        url: '/',
+        handler: episodesController.showHomePage,
+    },
     {
         method: 'GET',
         url: '/api/episodes',

@@ -166,7 +166,7 @@ function build(opts = {}) {
 
     app.get('/logout', async function (request, reply) {
         if (authUtils.isAuthenticated(request)) {
-            await authUtils.logoutSessionUser(request, reply);
+            await authUtils.logoutSessionUser(request);
             reply.redirect('/');
         } else {
             return reply.code(403).view('/view/login.hbs', {
@@ -183,8 +183,7 @@ function build(opts = {}) {
             const scopes = appConfig.msalConfig.scopes.inbox;
             const accessToken = await authUtils.getTokenSilently(
                 scopes,
-                request,
-                reply
+                request
             );
 
             const accountName = await authUtils.getAccountName(
@@ -224,8 +223,7 @@ function build(opts = {}) {
 
             const accessToken = await authUtils.getTokenSilently(
                 scopes,
-                request,
-                reply
+                request
             );
 
             var gotEpisodes = require('../lib/gotepisodes');

@@ -23,6 +23,7 @@ async function authVerify(request, reply, done) {
     }
 
     //Decoding token
+    // deepcode ignore JwtDecodeMethod: <please specify a reason of ignoring this>
     var decodedToken = jwt.decode(tokenArray[1], { complete: true });
     var token = tokenArray[1];
 

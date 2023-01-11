@@ -1,6 +1,6 @@
 {
     "name": "Cypress Test Client",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -12,9 +12,9 @@
     "author": "Lars Kåre Skjørestad",
     "license": "MIT",
     "devDependencies": {
-        "cypress": "^10.6.0",
-        "eslint": "^8.22.0",
+        "cypress": "^12.2.0",
+        "eslint": "^8.30.0",
         "eslint-plugin-cypress": "^2.12.1",
-        "snyk": "^1.991.0"
+        "snyk": "^1.1079.0"
     }
 }

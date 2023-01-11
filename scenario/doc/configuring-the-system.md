@@ -49,7 +49,7 @@ In our testing for the scenario we are introducing quite a risky pratcies that s
 
 The scenario have been verified with the following technologies:
 
-- Node 16.15.1 (If you want to run the components outside the containers)
-- Docker (v20.10.16)
-- Docker-compose (v.2.6.0)
-- Cypress (v10.6.0)
+- Node 18.12.1 (If you want to run the components outside the containers)
+- Docker (v20.12.21)
+- Docker-compose (v.2.13.0)
+- Cypress (v12.2.0)
