@@ -3,15 +3,11 @@
 
 # Thank You
 
-I am larskaare @ linkedIn, twitter, github and Mastodon @infosec.exchange
+I am <a style="color:red">larskaare</a> @ linkedIn, twitter, github</br> and @infosec.exchange (🐘)
 
 <hr>
 
->Visit [loop.equinor.com](https://loop.equinor.com) to learn more about the software developer community in Equinor.
-
-<hr>
-
->Visit [appsec.equinor.com](https://appsec.equinor.com) to learn more about AppSec in Equinor.
+>Visit [appsec.equinor.com](https://appsec.equinor.com) to meet the AppSec team and learn more about what we do. </br>We ❤️ sharing and learning.
 
 ---
 

@@ -45,9 +45,10 @@ The list is by no means exhaustive. Teams should have their own list!<!-- .eleme
 </br>
 <hr>
 
-#### Potential add-on's for our test principles:<!-- .element: class="fragment" data-fragment-index="8" -->
+#### Additional considerations:<!-- .element: class="fragment" data-fragment-index="8" -->
 
-<div style="background-color:grey; font-size:0.6em">The choices we make should, as far as possible, not disable the security features of our system! </br>We would like to develop as little as possible of "test supporting code"</div><!-- .element: class="fragment" data-fragment-index="9" -->
+<div style="background-color:grey; font-size:0.6em">The choices we make should, as far as possible, not disable the security features of our system! 
+</br>We would like to develop as little as possible of "test supporting code"</div><!-- .element: class="fragment" data-fragment-index="9" -->
 
 <font size="3em">A more elaborate [discussion](https://github.com/larskaare/pawa-system-testing/blob/main/scenario/doc/the-test-challenges.md) is available.</font><!-- .element: class="fragment" data-fragment-index="9" -->
 
