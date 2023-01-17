@@ -70,7 +70,6 @@ Code examples is not production quality!! </br>Some patterns that are discussed 
 - Lars Kåre Skjørestad - </br> __Lars__ will do just fine 🙂
 - Software Developer
 - Application Security Advocate in Equinor's AppSec Team
-- Abusing computers since mid 80's
 - Living at the west coast of Norway
 - 1 wife, 3 grown-up kids
 - Hobbies with too little time to pursue (besides coding), Gran Fondo cycling, fly-fishing
