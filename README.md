@@ -1,5 +1,9 @@
 # Running system tests with active authn/z
 
+## Archived
+
+This repos is archived. Patterns could still be relevant. I am quite sure the code does not age well. The code is not for production. Explore with caution ☡
+
 ## Purpose
 
 > Make teams curious on diverting more effort into system testing with authn/z (and other security features) activated.
